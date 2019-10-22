@@ -1,27 +1,57 @@
--var names = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+<div class="day time">
+	<div class="day_title">Time</div>
+	<div class="hour">8:00</div>
+	<div class="hour">9:00</div>
+	<div class="hour">10:00</div>
+	<div class="hour">11:00</div>
+	<div class="hour">12:00</div>
+	<div class="hour">13:00</div>
+	<div class="hour">14:00</div>
+	<div class="hour">15:00</div>
+	<div class="hour">16:00</div>
+</div>
 
--var days = [30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 1, 2];
+<div class="day monday">
+	<div class="day_title">Monday</div>
+	<div class="class red" data-tooltip="English Literature">2ELI1 [C1]</div>
+	<div class="class b15 blue" data-tooltip="Probability and Statistics">2MPS1 [K2]</div>
+	<div class="class b15 grey" data-tooltip="German">2GER1 [C1]</div>
+	<div class="class short blue" data-tooltip="Additional Probability and Statistics">2MPS+ [K2]</div>
+</div>
 
-.calendar-container
-  .calendar-header
-    h1 
-      | November
-      button ▾
-    p 2018
-  .calendar
-    - for(i=0;i<7;i++)
-      span.day-name= names[i]
+<div class="day tuesday">
+	<div class="day_title">Tuesday</div>
+	<div class="class gray" data-tooltip="Economics">2ECO3 [A1]</div>
+	<div class="class b15 orange" data-tooltip="German History">2GHI1 [C0]</div>
+	<div class="class b15 purple" data-tooltip="Ethics">2ETH1 [C2]</div>
+	<div class="class b45 red" data-tooltip="English Language: Writing">2ELA+ [A3]</div>
+	<div class="class red" data-tooltip="English Language">2ELA0 [C0]</div>
+</div>
 
-    - for(j=0;j<35;j++)
-      - if(j == 0 || j == 1 || j == 33 || j == 34)
-        div.day.day--disabled= days[j]
+<div class="day wednesday">
+	<div class="day_title">Wednesday</div>
+	<div class="class short spacing"></div>
+	<div class="class short yellow" data-tooltip="EU Politics">2EUP1 [C0]</div>
+	<div class="class b15 spacing"></div>
+	<div class="class b15 short navy" data-tooltip="Physics">2PHY1 [F2]</div>
+	<div class="class short spacing"></div>
+	<div class="class b15 turquoise" data-tooltip="Physical Education: Swimming">2SWM3</div>
+</div>
 
-      - else   
-        div.day= days[j]
-    section.task.task--warning Projects
-    section.task.task--danger Design Sprint
-    section.task.task--primary Product Checkup 1
-     .task__detail
-        h2 Product Checkup 1
-        p 15-17th November
-    section.task.task--info Product Checkup 2
+<div class="day thursday">
+	<div class="day_title">Thursday</div>
+	<div class="class grey" data-tooltip="German">2GER1 [C1]</div>
+	<div class="class b15 blue" data-tooltip="Advanced Integral Calculus">2MIC1 [K2]</div>
+	<div class="class b15 red" data-tooltip="English Literature">2ELI1 [C1]</div>
+	<div class="class short blue" data-tooltip="Additional Basic Integral Calculus">1CAL+ [K2]</div>
+	<div class="class short yellow" data-tooltip="UK Politics">2UKP5 [C2]</div>
+	<div class="class short yellow" data-tooltip="German Politics">2GEP5 [C2]</div>
+	<div class="class green" data-tooltip="Media Studies">2MDS2 [A1]</div>
+</div>
+
+<div class="day friday">
+  <div class="day_title">Friday</div>
+	<div class="class spacing"></div>
+	<div class="class b15 green" data-tooltip="Architechture">2ARC4 [A3]</div>
+	<div class="class b15 navy" data-tooltip="Physics">2PHY1 [F2]</div>
+</div>
